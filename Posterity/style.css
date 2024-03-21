@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: goldenrod;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.line{
+    border: 2px solid black;
+}
+.box{
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+/* header design */
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    height: 10vh;
+    background: beige;
+   
+
+}
+/* navigation */
+.main-nav{
+padding-top: 40px;
+background: linear-gradient(to right, #f32170,#ffeb07,#2196f3);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+background-clip:i;
+transition-duration: 0.2s;
+
+}
+.main-nav :hover{
+    background: linear-gradient(to right,#2196f3,#ffeb07, #f32170);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip:i;
+}
+
+.selected{
+  
+    font-size: 27px;
+    font-family: monospace;
+}
+/* navigation link */
+.main-nav a{
+    text-decoration: none;
+    padding-left: 10px;
+    
+}
+/* image logo */
+.img-logo{
+    padding-top: 20px;
+}
+
+/* introduction */
+.intro{
+    height: 40vh;
+    display: flex;
+    background-image: url(bg-image/photo_2_2024-02-27_00-21-16.jpg);
+    background-position: contain;
+    background-size: contain;
+    
+  
+}
+/* intro-box */
+.intro-bx{
+    margin: auto;
+}
+/* intro text  */
+.intro-txt{
+    
+    color: crimson;
+    font-size: 35px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    
+}
+.intro-txt:hover{
+    margin: auto;
+    background: linear-gradient(to right, #f32170,#ffeb07,#2196f3);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+   background-clip:i; 
+   font-size: 40px;
+   padding-bottom: 10px;
+
+}
+.intro-trail{
+    /* border: 2px solid red; */
+    width: 100px;
+    height: 26px;
+    border-radius: 19%;
+    background-color: gold;
+}
+.intro-trail:hover{
+    background-color: black;
+}
+.intro-trail a{
+    text-decoration: none;
+    color: blue;
+}
+
+.intro-trail a:hover{
+    color:white
+
+    
+}
+/* content */
+.scroll{
+    height: 3vh;
+    font-size: 20px;
+    color: #f32170;
+    cursor: pointer;
+    background-color: brown;
+   padding-top: 4px;
+   border-radius: 20px;
+}
+.scroll:hover{
+    background-color:darkorange;
+    height: 5vh;
+    text-transform: uppercase;
+    padding-top: 13px;
+    
+}
+
+/* description */
+.descrip{
+    height: 50vh;
+    overflow:visible;
+    background-color: blanchedalmond;
+    max-height: 100vh;
+    font-size: 15px;
+   
+}
+
+.descrip h2{
+    color: red;
+}
+.descrip  h1, h2:hover{
+color: #f32170;
+cursor: pointer;
+}
+
+/* trailer video */
+.trailer-v{
+    height: 33vh;
+}
+
+.trailer-v a{
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+
+/* footer */
+.footer{
+    text-align: center;
+    background: linear-gradient(to right, #f32170,#808080,#2196f3);
+
+}
+.footer-img{
+    transition-duration: 0.3s;
+    padding-left: 10px;
+}
+.footer-img:hover{
+    width: 70px;
+    transform: translateX(-15px);
+}
+.social-links{
+    padding-top: 10px;
+  
+}
+.social-links a{
+     margin: auto;
+     padding-left: 10px;
+}
+
+.pos{
+    color: #f32170;
+    text-shadow: 2px 2px 2px black;
+    margin: 0;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+   
+}
+.pos:hover{
+    color: red;
+    text-shadow: 2px 2px 3px blue;
+}
+
+/* resolution */
+@media (max-width:935px) {
+    .descrip{
+        height: 60vh;
+    }
+}  
+  
+@media (max-width:600px) {
+    .main-nav{
+        font-size: 12px;
+    }
+    .selected{
+  
+        font-size: 15px;
+        color: black;
+    }
+    .descrip{
+        height: 70vh;
+        font-size: 12px;
+    }
+}
+
+
+
+
+/* footer below. */
+.footer-bottom a{
+    text-decoration: none;
+}
+
+.footer-bottom a:active{
+    color:white;
+}
+
+.footer-bottom a:visited{
+    color: blue;
+}
+.footer-bottom a:hover{
+    color: lightsteelblue;
+}
+
+button{
+   width: 120px;
+   height: 30px; 
+   background-color: chocolate;
+   border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  margin-top: 20px;
+}
+button:hover{
+    width: 130px;
+    height: 40px;
+    background-color:crimson;
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-weight: bolder;
+    color: white;
+}

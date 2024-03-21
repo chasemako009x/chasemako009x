@@ -1,0 +1,91 @@
+body{
+    background-color: aqua;
+}
+/* Template design */
+*{
+    box-sizing: border-box;
+}
+#template{
+    display: flex;
+    flex-wrap: wrap;
+}
+.layout{
+    border: 1px solid red;
+}
+
+.item1{
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 5vh;
+    background-color: blue;
+}
+.item2{
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 2vh;
+    background-color:greenyellow;
+}
+.item3{
+    flex-basis: 20%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 40vh;
+    background-color: beige;
+   
+}
+.item4{
+    flex-basis: 80%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: aqua;
+}
+
+.item5{
+    flex-basis: 20%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 10vh;background-color: brown;
+    
+}
+.item6{
+    flex-basis: 80%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: darkkhaki;
+    
+}
+.item7{
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 5vh;
+    background-color: crimson;
+}
+
+/* Product design */
+#grid{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.prod1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 5vh;
+}
+
+.prod4{
+    grid-row-start: 2;
+    grid-row-end: 5;
+    height: 70vh;
+}
+
+.prod9{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 10vh;
+}
